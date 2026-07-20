@@ -77,14 +77,25 @@
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             text-align: center;
+            overflow: hidden;
         }
+        
+        /* ESTILOS PARA QUE LAS IMÁGENES SE VEAN UNIFORMES */
+        .card img {
+            max-width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        
         .card h3 {
             color: #d63447;
             margin-top: 0;
         }
         .cta-section {
             text-align: center;
-            margin: 3rem 0;
+            margin: 3rem 0 1.5rem 0;
             background: #ff6f91;
             color: white;
             padding: 2rem;
@@ -102,6 +113,48 @@
             margin-top: 1rem;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
+        
+        /* ESTILOS REDES SOCIALES */
+        .social-section {
+            text-align: center;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+        }
+        .social-section h3 {
+            color: #ff6f91;
+            margin-top: 0;
+        }
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        .btn-social {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .btn-social:hover {
+            transform: scale(1.05);
+        }
+        .btn-instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+        .btn-facebook {
+            background-color: #1877f2;
+        }
+        
         footer {
             text-align: center;
             padding: 1rem;
@@ -127,28 +180,51 @@
         <section class="productos">
             <h2>Nuestras Especialidades</h2>
             <div class="grid">
+                
+                <!-- Tarjeta 1: Con tu imagen de vaquero -->
                 <div class="card">
+                    <img src="ysle1.png" alt="Infantil Temática">
                     <h3>Gelatinas Infantiles</h3>
                     <p>Diseños coloridos y temáticos para los más pequeños de la casa. ¡Ideales para cumpleaños!</p>
                 </div>
+                
+                <!-- Tarjeta 2: Con tu primer vaso de mosaico -->
                 <div class="card">
-                    <h3>Gelatinas Frutales</h3>
-                    <p>Elaboradas con trozos de fruta natural fresca. Una opción ligera, refrescante y muy saludable.</p>
+                    <img src="ysle2.png" alt="Mosaico">
+                    <h3>Mosaicos Cremosos</h3>
+                    <p>Elaboradas con trozos de gelatina de sabores y una base suave y cremosa. Una opción ligera y deliciosa.</p>
                 </div>
+                
+                <!-- Tarjeta 3: Con tu segundo vaso de mosaico estilizado -->
                 <div class="card">
+                    <img src="ysle3.png" alt="Gelatinas">
                     <h3>Gelatinas de Leche</h3>
                     <p>Exquisitas combinaciones cremosas con sabores tradicionales como tres leches, chocolate y vainilla.</p>
                 </div>
+                
             </div>
         </section>
 
         <section class="cta-section">
             <h2>¿Listo para endulzar tu día?</h2>
             <p>Haz tu pedido personalizado de forma rápida y sencilla directamente con nosotros.</p>
-            <!-- Recuerda cambiar el número de teléfono en el enlace de abajo si lo necesitas -->
-            <a href="https://wa.me/584120000000?text=Hola%20Gelatinas%20Elsie,%20quiero%20hacer%20un%20pedido" class="btn-whatsapp" target="_blank">
+            <a href="https://wa.me/584120000000?text=Hola%20Gelatinasysle%20quiero%20hacer%20un%20pedido" class="btn-whatsapp" target="_blank">
                 Pedir por WhatsApp
             </a>
+        </section>
+
+        <!-- SECCIÓN DE REDES SOCIALES (¡CORREGIDA!) -->
+        <section class="social-section">
+            <h3>¡Síguenos en nuestras redes sociales!</h3>
+            <p>Mira nuestras últimas creaciones y entérate de las novedades de <strong>Gelatinasysle</strong>.</p>
+            <div class="social-buttons">     
+                <a href="https://www.instagram.com/gelatinasysle" class="btn-social btn-instagram" target="_blank" rel="noopener noreferrer">
+                    📸 Instagram
+                </a>
+                <a href="https://www.facebook.com/gelatinasysle" class="btn-social btn-facebook" target="_blank" rel="noopener noreferrer">
+                    👤 Facebook
+                </a>
+            </div>
         </section>
     </div>
 
